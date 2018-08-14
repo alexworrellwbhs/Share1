@@ -1,0 +1,242 @@
+//META{"name":"Nova Fork","description":"Explore the galaxy with a chilling theme. Please use the support server listed below if you need any help.","author":"Satoru","version":"1.4","website":"http://discord.gg/fjvwb95"}*//{}
+
+/* This is my fork of Nova. I will update/add to this and fix anything that breaks.
+   Credit to DinosParkour for original theme. */
+   
+@import url(https://satoru8.github.io/NovaFork/Nova.css);
+
+:root {
+	--chatbg:rgba(0,0,0,.0); /* Chat background darkness */
+	--text: rgb(255, 255, 255); /* Chat text colour */
+    --round: 10%;	/* Overall icon roundness */
+	--size1: 70px; /* Avatar Size */
+	--round1: 10%;  /* Chat Avatar roundness 50% Circle. */
+	--margin1: 0px; /* Margin left/right */
+	--margin2: 0px; /* Margin top/bottom */
+	--shadow1: 0 0 1px #000; /* Shadow for transparent themes. */}
+
+/*Background Picture */
+.appMount-3VJmYg {background: url(https://cdn.lifebuzz.com/images/16897/lifebuzz-558d1cd51f483121f982648478b2ad6f-limit_2000.gif) center/cover no-repeat}
+
+/* Hide Blocked Messages */
+.messageGroupBlocked-3wrQQX {display:none}
+
+/* Custom Home Icon */
+.homeIcon-1FoKUJ g{display:none}
+svg.homeIcon-1FoKUJ{background: url(https://i.redd.it/cfl8l52kgq801.gif) no-repeat center/cover}
+
+:root {
+    --size1: 60px; /* Avatar Size */
+    --round1: 5%;  /* Avatar roundness 50% Circle. */
+    --margin1: 0px; /* Margin left/right */
+    --margin2: 0px; /* Margin top/bottom */
+    --shadow1: 0 0 2px #000; /* Shadow for transparent themes. */
+}
+
+/* Hide Top Info Bar */
+/* .title-3qD0b-{height:8px;transition:.3s}
+.title-3qD0b-:hover {height:48px;transition:.3s}
+.divider-2PMBlV,.iconMargin-2YXk4F, .channelName-3stJzi, .titleText-3X-zRE, .title-3qD0b- .search,.topic-2QX7LI,.theme-dark .iconBadge-2dji3k {visibility: hidden}
+
+.title-3qD0b-:hover .iconMargin-2YXk4F, .title-3qD0b-:hover .channelName-3stJzi,
+.title-3qD0b-:hover .titleText-3X-zRE, .title-3qD0b-:hover .search,.title-3qD0b-:hover .topic-2QX7LI,.title-3qD0b-:hover .iconBadge-2dji3k {visibility: visible;transition: .9s}
+*/
+
+/* Chat Bubble */
+.containerCozy-jafyvG {background: hsla(0, 0%, 0%, 0.2);box-shadow: 0px 0px 5px 0px red;margin: 20px;border-radius:10px} 
+.containerCozy-jafyvG:hover {background: hsla(0, 0%, 0%, 0.4);box-shadow: 0px 0px 10px 1px red }
+
+/* My Tweaks */
+
+	/* Root Colors */
+		:root {
+		--color: hsla(0, 100%, 50%, 0.6);
+		--color2: hsla(0, 100%, 50%, 0.9);
+		--trans2: hsla(0, 0%, 0%, 0.8);}
+
+	/* No Friends Screen Transparent */
+		.theme-dark .noChannel-Z1DQK7 {background: transparent;}
+		
+	/* Activity Screen Message Button Color Hover */
+		.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
+		background-color: #ff3636;
+		color: #fff;}
+		
+	/* Activity Screen Message Button Color */
+	
+
+	/* Horizontal Notification Fix */
+		.guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.selected-ML3OIq:before, .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr:before {
+		top: unset;
+		left: -10%; 
+		bottom: -10px;
+		margin: 0;
+		height: 10px;
+		border-radius: 0;
+		clip-path: polygon(50% 0, 100% 100%, 0 100%);}
+		
+	/* Guild Separator Color */
+		.theme-dark .guildSeparator-1X4GQ1:after {
+		background: rgb(150, 14, 12);}
+		
+	/* Account Profile Tab Color */
+		.bd-blue .tab-bar.TOP .tab-bar-item.selected {
+		border-bottom: 2px solid #ff0000;
+		color: #ff0000;}
+		
+	/* Color */
+		.guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr:before {
+		background-color: rgba(255,0,0,0.45);
+		z-index: -1;}
+
+	/* Add Server Plus Red */
+		.guildsWrapper-5TJh6A .guildsAdd-21_IdK {
+		background: rgba(0, 0, 0, 0.3);
+		border: 1px dashed rgba(204,97,61,0.9);
+		color: rgba(255, 0, 0, 0.7);
+	}
+	/* Channel Highlight Tweak */
+		.private-channels .channel:hover a, .contentHoveredText-2D9B-x, .contentHoveredVoice-3p_NEO, .contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
+		background: rgba(255, 0, 0, 0.2);}
+		
+	/* Channel Context Menu Highlight Color */
+		#app-mount .item-1Yvehc:hover {
+		background: rgba(255, 0, 0, 0.4);
+		color: #fff;}
+		
+	/* Search Bar Tweak */
+		.search-l1Wz-Q {
+		border: 1px solid #0000ff;
+		border-top-color: rgb(255, 0, 0);
+		border-top-style: solid;
+		border-top-width: 1px;
+		border-right-color: rgb(255, 0, 0);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-bottom-color: rgb(255, 0, 0);
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-left-color: rgb(255, 0, 0);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-image-source: initial;
+		border-image-slice: initial;
+		border-image-width: initial;
+		border-image-outset: initial;
+		border-image-repeat: initial;
+		border-radius: 5px;}
+	
+	/* Info Icon Tweaks */
+		#app-mount .iconForeground-3y9f0B, .theme-dark .searchOption-zQ-1l6 .filter-3Y_im-, .theme-dark .option-96V44q .filter-3Y_im- {
+		color: #ff0000;}
+		
+	/* Search Options Color */
+		#app-mount .resultsGroup-r_nuzN .header-2N-gMV {
+		color: rgba(255, 0, 0, 0.9);
+		font-size: 15px;
+		font-weight: 700;
+		text-align: center;}
+		
+	/* Chat Scrollbar Tweak */
+		::-webkit-scrollbar-thumb {
+		border-radius: 2px!important;
+		border: none!important;
+		background-color: hsla(0, 100%, 50%, 0.3) !important;}
+		
+	/* Scrollbar Color */
+		#app-mount .inner-zqa7da {
+		background-color: rgba(0, 0, 0, 0.498039);
+		box-shadow: rgba(255, 0, 0, 0.8) 0px 0px 15px 1px;}
+		
+	/* Group Name Color */
+		#app-mount .membersGroup-v9BXpm {
+		color: #ea0000;
+		font-size: 15px;
+		font-weight: 600;
+		height: 35px;
+		letter-spacing: .04em;
+		line-height: 15px;
+		overflow: hidden;
+		text-align: center;}
+		
+	/* Activity Game Hover Transparent */
+		#app-mount .dockItem-2kQDqg:hover {
+		background-color: rgba(0, 0, 0, 0.3) !important;
+		color: #ffffff;
+		border: 1px dotted red;}
+		
+	/* Member List Hover Color */
+		#app-mount .member-3W1lQa:hover .content-OzHfo4, .theme-dark .option-96V44q.selected-rZcOL- {
+		background-color: rgba(111, 2, 2, 0.6);}
+		
+	/* Member List Select Color */
+		#app-mount .member-3W1lQa.popout-open .content-OzHfo4, #app-mount .member-3W1lQa.popout-open:hover .content-OzHfo4 {
+		background-color: rgba(111, 2, 2, 0.6);}
+		
+	/* Member List Pop-Up Message Border Color */
+		.quickMessage-2XpSaN {
+		border: 1px solid #ff0000 !important;}
+		
+	/* Chat Divider Color */
+		.theme-dark .divider-3gKybi:not(.red-1YQ4s7) div {
+		background: #ff5a5a;
+		background-image: initial;
+		background-position-x: initial;
+		background-position-y: initial;
+		background-size: initial;
+		background-repeat-x: initial;
+		background-repeat-y: initial;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: rgb(255, 0, 0);}
+	
+	/* Unread Notification Color */
+		.unread-1xRYoj {
+		background-color: rgba(255, 2, 2, 0.3);}
+		
+	/* Unread Notification Hover Color */
+		.unread-1xRYoj:hover {
+		background-color: rgba(255, 92, 92, 0.91);}
+		
+	/* Unread NotificAation Animation */
+		.guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.selected-ML3OIq:before, .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ.unread-qLkInr:before {
+		border-radius: 20%;
+		width: 60px;
+		margin-top: -7px;
+		transition: background-color .5s cubic-bezier(1, 0.01, 0.57, 1.06);}
+		
+	/* Emote Reac Color */
+		.theme-dark .reaction {
+		background: rgba(0, 0, 0, 0.4);
+		border: 1px solid red;}
+		
+	/* Account ID# */
+		.accountDetails-3k9g4n .discriminator {
+		display: block;
+		font-size: 10px;
+		margin-top: 4px;
+		opacity: .9;}
+		
+	/* NSFW Tag Color */
+		.nsfw-tag {
+		position: relative;
+		overflow: hidden;
+		padding: 1px 2px 1px 2px;
+		margin-left: 5px;
+		height: 13px;
+		border-radius: 3px;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 14px;
+		white-space: nowrap;
+		color: rgb(71, 90, 240);
+		background-color: rgba(89, 71, 240, 0.0980392);
+		border: 1px solid rgba(71, 146, 240, 0.498039);}
+		
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+   font-family: 'Open Sans',serif;
+}
